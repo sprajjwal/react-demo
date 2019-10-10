@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PageHeader from './PageHeader'
 
 function Title(props){
   return (
@@ -13,10 +13,7 @@ function Title(props){
 function App() {
   return (
     <div className="App">
-      <h1>Hello, World!</h1>
-      <Title text="Some value" subtext="some string"/>
-      <Title text="1 value"/>
-      <Title text="2 value"/>
+      <PageHeader/>
     </div>
   );
 }
