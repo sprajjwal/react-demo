@@ -2,23 +2,21 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function Title(props){
+  return (
+  <div>
+    <h3>{props.text}</h3>
+    <p>{props.subtext}</p>
+  </div>)
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello, World!</h1>
+      <Title text="Some value" subtext="some string"/>
+      <Title text="1 value"/>
+      <Title text="2 value"/>
     </div>
   );
 }
